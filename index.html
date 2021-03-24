@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>HTML FORMS</h1>
+    <br />
+    <form action="/hello.php" autocomplete="on">
+      <fieldset>
+        <legend>PERSONAL INFORMATION</legend>
+        <label for="name" ENTER YOUR NAME></label>ENTER YOUR NAME :
+        <input type="text" name="name" /><br /><br />
+        <label for="email">ENTER YOUR EMAIL ADDRESS : </label>
+        <input type="email" name="email" id="email" /><br /><br />
+        <label for="tel">ENTER YOUR TELEPHONE NUMBER </label>
+        <input type="tel" name="tel" id="tel" />
+        <br /><br />
+        <label for="cgpa">ENTER YOUR CGPA</label>
+        <select id="cgpa" name="cgpa">
+          <option value="10">10.0</option>
+          <option value="9">9.0</option>
+          <option value="8">8.0</option>
+          <option value="7">7.0</option>
+          <option value="6">6.0</option>
+          <option value="5">5.0</option>
+          <option value="4">4.0</option>
+          <option value="fail" selected>fail</option>
+        </select>
+        <br />
+        <label for="details">ENTER YOUR DETAILS </label>
+        <textarea name="details" id="details" rows="3" cols="80">
+        ENTER YOUR DETAILS</textarea
+        ><br /><br />
+        <button type="button" onclick="alert('HELLO WORLD')">CLICK ME</button>
+
+        <button type="menu">MENU</button>
+        <br /><br />
+        <input list="occupation" />
+        <label for="occupation">ENTER OCCUPATION</label>
+        <datalist id="occupation">
+          <option value="DOCTOR"></option>
+          <option value="ENGINEER"></option>
+          <option value="LAWYER"></option>
+          <option value="ACTOR"></option>
+          <option value="SURGEON"></option></datalist
+        ><br /><br />
+        <label>ENTER YOUR GENDER</label><br /><br />
+        <input type="radio" name="gender" id="male" value="MALE" />
+        <label for="male">MALE</label><br /><br />
+        <input type="radio" name="gender" id="female" value="FEMALE" />
+        <label for="female">FEMALE</label><br /><br />
+        <input type="radio" name="gender" id="other" value="OTHER" />
+        <label for="other">OTHER</label><br /><br />
+
+        <br />
+        <button type="submit" name="submit" value="submit">SUBMIT</button>
+        <button type="reset">RESET THE FORM</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
